@@ -1,18 +1,75 @@
-<section class="nl-cta" id="cta">
-  <div class="container-xl">
-    <div class="nl-cta__card" data-gsap="fade-up">
-      <div class="nl-cta__content">
-        <h2 class="nl-cta__heading">Ready to build something<br>that actually works?</h2>
-        <p class="nl-cta__sub">Book a free 30-minute discovery call. We'll scope your project, share honest recommendations, and send a proposal within 48 hours.</p>
-        <div class="nl-cta__actions">
-          <a href="mailto:hello@niduslab.com" class="btn-white">Book a free call</a>
-          <a href="mailto:hello@niduslab.com" class="btn-ghost-white">hello@niduslab.com</a>
+   <!-- 11 — CTA -->
+    <section class="cta-section" data-screen-label="11 CTA">
+      <div class="cta-card">
+        <span class="cta-badge">
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M12 3l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"></path>
+          </svg>
+          Let's build something exceptional
+        </span>
+
+        <h2 class="cta-heading">
+          Have an idea?<br />
+          <em>Let's bring it to life.</em>
+        </h2>
+
+        <p>
+          Tell us about your project. We'll get back within 24 hours with
+          thoughts, scope, and a plan tailored to your goals — no scripted sales
+          call.
+        </p>
+
+        <div class="cta-buttons">
+          <a class="btn cta-btn-white" href="#">
+            Get a free quote
+            <span class="ico">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M4 12L12 4M6 4h6v6"></path>
+              </svg>
+            </span>
+          </a>
+          <a class="btn cta-btn-ghost" href="mailto:hello@niduslab.com">
+            hello@niduslab.com
+            <span class="ico">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M4 12L12 4M6 4h6v6"></path>
+              </svg>
+            </span>
+          </a>
+        </div>
+
+        <div class="cta-feats">
+          <span>24h response</span>
+          <span>NDA on request</span>
+          <span>Fixed-scope or retainer</span>
+          <span>Worldwide remote</span>
         </div>
       </div>
-      <div class="nl-cta__decoration" aria-hidden="true">
-        <div class="nl-cta__orb nl-cta__orb--1"></div>
-        <div class="nl-cta__orb nl-cta__orb--2"></div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>

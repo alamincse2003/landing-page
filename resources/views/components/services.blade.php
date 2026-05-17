@@ -1,40 +1,244 @@
-<section class="nl-services" id="services">
-  <div class="container-xl">
-
-    <div class="nl-section-label" data-gsap="fade-up">What We Serve</div>
-    <h2 class="nl-section-heading" data-gsap="fade-up" data-delay="0.05">
-      Every discipline you need.<br>One team that delivers.
-    </h2>
-
-    <div class="nl-services__grid" data-gsap="stagger">
-      @foreach($services as $service)
-        <div class="nl-services__cell">
-          <div class="nl-services__icon">
-            @switch($service['icon'])
-              @case('code')
-                <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M7 8l-4 3 4 3M15 8l4 3-4 3M13 5l-4 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                @break
-              @case('smartphone')
-                <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect x="6" y="2" width="10" height="18" rx="2" stroke="currentColor" stroke-width="1.6"/><circle cx="11" cy="17" r="1" fill="currentColor"/></svg>
-                @break
-              @case('cpu')
-                <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect x="6" y="6" width="10" height="10" rx="1" stroke="currentColor" stroke-width="1.6"/><path d="M9 6V4M13 6V4M9 18v-2M13 18v-2M6 9H4M6 13H4M18 9h-2M18 13h-2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-                @break
-              @case('layout')
-                <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect x="3" y="3" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M3 8h16M10 8v11" stroke="currentColor" stroke-width="1.6"/></svg>
-                @break
-              @case('database')
-                <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><ellipse cx="11" cy="6" rx="7" ry="3" stroke="currentColor" stroke-width="1.6"/><path d="M4 6v10c0 1.66 3.13 3 7 3s7-1.34 7-3V6" stroke="currentColor" stroke-width="1.6"/><path d="M4 11c0 1.66 3.13 3 7 3s7-1.34 7-3" stroke="currentColor" stroke-width="1.6"/></svg>
-                @break
-              @default
-                <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><polyline points="17 6 23 6 23 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            @endswitch
+   <!-- 04 — WHAT WE SERVE -->
+    <section class="sec" data-screen-label="04 What We Serve">
+      <div class="container">
+        <div class="sec-head">
+          <div>
+            <span class="sec-eyebrow">What We Serve</span>
+            <h2 class="sec-title">
+              Services that ship.<br /><span class="alt">Not slide decks.</span>
+            </h2>
           </div>
-          <h3 class="nl-services__title">{{ $service['title'] }}</h3>
-          <p class="nl-services__desc">{{ $service['desc'] }}</p>
+          <p class="sec-lede">
+            Six disciplines. One team. We engineer, design, and grow every part
+            of the modern product stack — from first commit to compounding
+            traction.
+          </p>
         </div>
-      @endforeach
-    </div>
 
-  </div>
-</section>
+        <div class="serve-grid">
+          <a class="serve-cell" href="#">
+            <span class="serve-num">01</span>
+            <div class="serve-ico">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M8 6L2 12l6 6M16 6l6 6-6 6M14 4L10 20"></path>
+              </svg>
+            </div>
+            <h3>Web Development</h3>
+            <p>
+              Production-grade websites and platforms built on modern stacks.
+            </p>
+            <span class="serve-arrow">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 16 16"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M4 12L12 4M6 4h6v6"></path>
+              </svg>
+            </span>
+          </a>
+
+          <a class="serve-cell" href="#">
+            <span class="serve-num">02</span>
+            <div class="serve-ico">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="6" y="2" width="12" height="20" rx="2.5"></rect>
+                <path d="M11 18h2"></path>
+              </svg>
+            </div>
+            <h3>Mobile Apps</h3>
+            <p>
+              Native iOS, Android, and cross-platform apps users actually keep.
+            </p>
+            <span class="serve-arrow">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 16 16"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M4 12L12 4M6 4h6v6"></path>
+              </svg>
+            </span>
+          </a>
+
+          <a class="serve-cell" href="#">
+            <span class="serve-num">03</span>
+            <div class="serve-ico">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="5" y="6" width="14" height="12" rx="2"></rect>
+                <path d="M9 6V3M15 6V3M9 12h.01M15 12h.01M9 16h6"></path>
+              </svg>
+            </div>
+            <h3>AI Engineering</h3>
+            <p>Custom LLM apps, agents, and intelligent workflow automation.</p>
+            <span class="serve-arrow">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 16 16"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M4 12L12 4M6 4h6v6"></path>
+              </svg>
+            </span>
+          </a>
+
+          <a class="serve-cell" href="#">
+            <span class="serve-num">04</span>
+            <div class="serve-ico">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1z"
+                  fill="currentColor"
+                  fill-opacity="0.15"
+                ></path>
+                <path d="M4 20l8-8"></path>
+                <circle cx="14" cy="10" r="2"></circle>
+              </svg>
+            </div>
+            <h3>UX/UI Design</h3>
+            <p>
+              Interfaces that convert — research-led, system-driven, beautiful.
+            </p>
+            <span class="serve-arrow">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 16 16"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M4 12L12 4M6 4h6v6"></path>
+              </svg>
+            </span>
+          </a>
+
+          <a class="serve-cell" href="#">
+            <span class="serve-num">05</span>
+            <div class="serve-ico">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <ellipse cx="12" cy="5" rx="8" ry="3"></ellipse>
+                <path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5"></path>
+                <path d="M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"></path>
+              </svg>
+            </div>
+            <h3>Data Engineering</h3>
+            <p>
+              Pipelines, warehouses, and dashboards that turn data into
+              decisions.
+            </p>
+            <span class="serve-arrow">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 16 16"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M4 12L12 4M6 4h6v6"></path>
+              </svg>
+            </span>
+          </a>
+
+          <a class="serve-cell" href="#">
+            <span class="serve-num">06</span>
+            <div class="serve-ico">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M3 17l6-6 4 4 8-8"></path>
+                <path d="M14 7h7v7"></path>
+              </svg>
+            </div>
+            <h3>Growth &amp; Strategy</h3>
+            <p>Brand, content, and performance marketing that compound.</p>
+            <span class="serve-arrow">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 16 16"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M4 12L12 4M6 4h6v6"></path>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
